@@ -1,0 +1,142 @@
+.site-header {
+  background-color: #f1f0ee;
+  padding: 17px 0px;
+}
+
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-start {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 20px;
+}
+
+.warning-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 13px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.warning-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #80755c;
+}
+
+.site-header-end {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-enter-btn {
+  padding: 8px 52px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 100px;
+  border: none;
+  margin-right: 40px;
+}
+
+.site-header-burger {
+  border: none;
+  background-color: transparent;
+}
+
+.menu{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #80755c;
+  transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.active{
+  transform: translateX(0%);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.site-nav-list-burger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.site-nav-link{
+  color: #fff;
+}
+
+.close-btn{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.close-box{
+  position: fixed;
+  right: 0;
+  margin-right: 80px;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 720px) {
+  .warning-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px;
+    background: #ffffff;
+    border-radius: 50px;
+  }
+  .warning-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .site-header-enter-btn {
+    padding: 5px 24px;
+    margin-right: 15px;
+  }
+}
+
+
+@media only screen and (max-width:430px) {
+  .logo-img {
+    width: 112px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .warning-box {
+    gap: 0px;
+    padding: 6px;
+  }
+}
